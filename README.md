@@ -2,6 +2,26 @@
 A robust set of sythetic datasets from the style of Amazon CXBT team in order to help you understand, practice and learn common VOC foundational concepts and principles.
 <img width="1600" height="900" alt="amazon customer journey" src="https://github.com/user-attachments/assets/e8f11bb9-a25a-4feb-99b5-0867e32693ee" />
 
+## CXBT (Customer Experience & Business Trends) — Project Focus
+
+* **What CXBT is:** a cross-company, data-driven org focused on improving customer experience by turning signals into action. BIE/DE roles partner with PM/Science to measure, diagnose, and optimize CX with experiments, causal methods, and ML.
+* **How access works:** think **federated funnel**—deep, domain-scoped entitlements (e.g., Discovery, Checkout, Delivery) plus curated cross-domain data products. Analysts own end-to-end outcomes with **least-privilege** data access.
+
+### This repo focuses on Stages 1–3 of the customer journey
+
+1. **Stage 1: Discover & Consider**
+   Sessions, search, browse, PDP, help, reviews, and pre-purchase CES. KPIs: DPVR, ZRR, Help Bounce→Contact, CES, Review sentiment; **Predictive:** Propensity-to-Explore; **Prescriptive:** Query→Content recommendations.
+   *UTC + local timestamps included; SQL-ready facts/dims.*
+
+2. **Stage 2: Purchase & Checkout**
+   Checkout sessions/steps, payments, orders, and purchase CES. KPIs: ATCR, Purchase Conversion Rate, Checkout Error Rate, Payment Decline Rate, CES (effort); **Predictive:** Purchase Propensity; **Prescriptive:** Promo/Flow recommender.
+   *Calibrated conversion controls; marketplace/prime flags for slicing.*
+
+3. **Stage 3: Fulfillment & Delivery**
+   Promised vs actual delivery, carrier events, WISMO, post-delivery NPS. KPIs: OTD, Promise Accuracy, WISMO Contact Rate, Delivery Exception Rate, NPS; **Predictive:** Late-Risk score; **Prescriptive:** Promise Orchestrator.
+   *UTC/local dual timestamps throughout; market + prime enrichment.*
+
+**Implementation highlights:** normalized facts/dims, daily KPI tables by **marketplace** and **prime\_flag**, temporal rollups (day/week/month), and Postgres-friendly schemas for descriptive, diagnostic, predictive, and prescriptive analytics.
 
 
 ## Data Dictionary
