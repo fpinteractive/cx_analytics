@@ -1,5 +1,12 @@
 # cx_analytics
 A robust set of sythetic datasets from the style of Amazon CXBT team in order to help you understand, practice and learn common VOC foundational concepts and principles.
+
+# KPI Datasets (GitHub-sized)
+Compressed, partitioned Parquet exports of KPI tables.
+- Format: Parquet (ZSTD, dict-encoding), partitioned by year-month
+- Each file < 95MB; total ≤ 1GB
+- Columns and data types optimized for small footprint
+
 <img width="1600" height="900" alt="amazon customer journey" src="https://github.com/user-attachments/assets/e8f11bb9-a25a-4feb-99b5-0867e32693ee" />
 
 ## CXBT (Customer Experience & Business Trends) — Project Focus
