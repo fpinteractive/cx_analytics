@@ -125,12 +125,4 @@ Types are suggested for Postgres. All `*_ts` columns are **TIMESTAMPTZ (UTC)** u
 
 ---
 
-## Keys & Relationships (quick map)
-
-* `dim_customer( customer_id )` ← `fact_session.customer_id`, `fact_order.customer_id`, `fact_fulfillment_enriched.customer_id`
-* `dim_product( asin )` ← `fact_browse.asin`, `fact_pdp.asin`, `fact_review_interaction.asin`, `fact_order.asin`
-* `fact_session( session_id )` ← `fact_search.session_id`, `fact_browse.session_id`, `fact_pdp.session_id`, `fact_help.session_id`, `fact_ces_pre_purchase.session_id`, `session_scored.session_id`
-* `fact_checkout_session( checkout_session_id )` ← `fact_checkout_step.checkout_session_id`, `fact_payment.checkout_session_id`, `fact_order.checkout_session_id`
-* `fact_order( order_id )` ← `fact_payment.order_id`, `fact_ces_purchase.order_id`, `fact_fulfillment.order_id`, `fact_carrier_event.order_id`, `fact_wismo_contact.order_id`, `fact_nps_post_delivery.order_id`
-
 > **Timezone note:** All `*_ts` are stored as **UTC**. “`*_local_ts`” columns are localized view columns—still TIMESTAMPTZ, but include the market’s offset (derived from `marketplace → tz` map).
