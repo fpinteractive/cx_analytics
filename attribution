@@ -1,0 +1,22 @@
+This project, developed by Career Oracle Inc, makes use of the O*NET 30.0 Database.
+
+The O*NET 30.0 Database is provided by the U.S. Department of Labor,
+Employment and Training Administration (USDOL/ETA). 
+
+O*NET data is licensed under the Creative Commons Attribution 4.0 International License:
+https://creativecommons.org/licenses/by/4.0/
+
+You must provide proper attribution to O*NET when redistributing or
+modifying this data. This project may include modifications, transformations,
+and integrations of the original O*NET data to support Career Oracle Inc
+applications and services.
+
+The USDOL/ETA has not approved, endorsed, or tested these modifications
+and does not endorse Career Oracle Inc or its products.
+
+Attribution should read as follows:
+
+“This project uses data from the O*NET 30.0 Database, developed by the
+U.S. Department of Labor, Employment and Training Administration (USDOL/ETA).
+O*NET data is licensed under the Creative Commons Attribution 4.0 International
+License. Modifications have been made by Career Oracle Inc.”
